@@ -272,6 +272,27 @@
 // console.log(booksByAuthor);
 
 22;
+
+// const getUsersWithFriend = (users, friendName) => {
+//   return users.filter((user) => user.friends.includes(friendName));
+// };
+// console.log(getUsersWithFriend(users, "Briana Decker"));
+
+25;
+
+// const getFriends = (users) => {
+//   const unicFriends = [];
+//   const allFriends = users.flatMap((user) => user.friends);
+
+//   allFriends.forEach((friend) => {
+//     if (!unicFriends.includes(friend)) {
+//       unicFriends.push(friend);
+//     }
+//   });
+//   return unicFriends;
+// };
+
+27;
 // const users = [
 //   {
 //     name: "Moore Hensley",
@@ -281,7 +302,6 @@
 //     isActive: false,
 //     balance: 2811,
 //     gender: "male",
-//     age: 37,
 //   },
 //   {
 //     name: "Sharlene Bush",
@@ -291,60 +311,69 @@
 //     isActive: true,
 //     balance: 3821,
 //     gender: "female",
-//     age: 34,
-//   },
-//   {
-//     name: "Ross Vazquez",
-//     email: "rossvazquez@xinware.com",
-//     eyeColor: "green",
-//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-//     isActive: false,
-//     balance: 3793,
-//     gender: "male",
-//     age: 24,
-//   },
-//   {
-//     name: "Elma Head",
-//     email: "elmahead@omatom.com",
-//     eyeColor: "green",
-//     friends: ["Goldie Gentry", "Aisha Tran"],
-//     isActive: true,
-//     balance: 2278,
-//     gender: "female",
-//     age: 21,
-//   },
-//   {
-//     name: "Carey Barr",
-//     email: "careybarr@nurali.com",
-//     eyeColor: "blue",
-//     friends: ["Jordan Sampson", "Eddie Strong"],
-//     isActive: true,
-//     balance: 3951,
-//     gender: "male",
-//     age: 27,
-//   },
-//   {
-//     name: "Blackburn Dotson",
-//     email: "blackburndotson@furnigeer.com",
-//     eyeColor: "brown",
-//     friends: ["Jacklyn Lucas", "Linda Chapman"],
-//     isActive: false,
-//     balance: 1498,
-//     gender: "male",
-//     age: 38,
-//   },
-//   {
-//     name: "Sheree Anthony",
-//     email: "shereeanthony@kog.com",
-//     eyeColor: "brown",
-//     friends: ["Goldie Gentry", "Briana Decker"],
-//     isActive: true,
-//     balance: 2764,
-//     gender: "female",
-//     age: 39,
 //   },
 // ];
-// const getUsersWithFriend = (users, friendName) => {
-//   return users.filter((user) => user.friends.includes(friendName));
+// const getUserWithEmail = (users, email) => {
+//   return users.find((user) => user.email === email);
 // };
-// console.log(getUsersWithFriend(users, "Briana Decker"));
+// console.log(getUserWithEmail(users, "sharlenebush@tubesys.com"));
+
+30;
+const firstArray = [26, 94, 36, 18];
+const secondArray = [17, 61, 23];
+const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// Change code below this line
+
+// const eachElementInFirstIsEven = firstArray.every((number) => number % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every((number) => number % 2 !== 0);
+
+// const eachElementInSecondIsEven = secondArray.every(
+//   (number) => number % 2 === 0
+// );
+// const eachElementInSecondIsOdd = secondArray.every(
+//   (number) => number % 2 !== 0
+// );
+
+// const eachElementInThirdIsEven = thirdArray.every((number) => number % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every((number) => number % 2 !== 0);
+// console.log(eachElementInFirstIsEven);
+// console.log(eachElementInFirstIsOdd);
+// console.log(eachElementInSecondIsEven);
+// console.log(eachElementInSecondIsOdd);
+// console.log(eachElementInThirdIsEven);
+// console.log(eachElementInThirdIsOdd);
+
+34;
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// // const totalPlayTime = playtimes.reduce((prevNum, num) => {
+// //   return (prevNum += num);
+// // }, 0);
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// console.log(averagePlayTime);
+
+35;
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+
+// const totalAveragePlaytimePerGame = players.reduce((time, player) => {
+//   return time + player.playtime / player.gamesPlayed;
+// }, 0);
+
+// console.log(totalAveragePlaytimePerGame);
+
+36;
