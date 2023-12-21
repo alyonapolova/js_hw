@@ -88,18 +88,75 @@ console.log(result6);
 
 function myFunction7(a) {
   const isPrime = (num) => {
-    if (num <= 1) {
-      return false;
-    }
-
-    for (let i = 2; i <= a; i += 1) {
-      if (a % i === 0) {
-        return false; //число не простое
+    for (let i = 2; i < num; i += 1) {
+      if (num % i === 0) {
+        return false; // число не простое
       }
     }
-
-    return true;
+    return num > 1;
   };
+
+  const nextPrime = (num) => {
+    while (!isPrime(++num)) {}
+    return num;
+  };
+
+  return isPrime(a) ? a : nextPrime(a);
+
+  // function isPrime(num) {
+  //   for (let i = 2; i <= Math.sqrt(num); i++) {
+  //     if (num % i === 0) return false;
+  //   }
+  //   return num > 1;
+  // }
+  // let n = a;
+  // while (!isPrime(n)) n++;
+  // return n;
 }
 const result7 = myFunction7(38);
 console.log(result7);
+
+// 8 Write a function that takes two numbers, say x and y, as arguments. Check if x is divisible by y. If yes, return x. If not, return the next higher natural number that is divisible by y
+
+function myFunction8(x, y) {
+  const isDevisible = (a, b) => {
+    return a % b === 0;
+  };
+  const nextDivisible = (num, divisor) => {
+    while (!isDevisible(num, divisor)) {
+      num++;
+    }
+    return num;
+  };
+  return isDevisible(x, y) ? x : nextDivisible(x, y);
+
+  // while (x % y !== 0) x++;
+  // return x;
+}
+const result8 = myFunction8(1, 23);
+console.log(result8);
+
+// 9 Write a function that takes two strings (a and b) as arguments. Beginning at the end of 'a', insert 'b' after every 3rd character of 'a'. Return the resulting string.
+
+function myFunction9(a, b) {
+  let result = [];
+  let rest = a;
+  while (rest.length) {
+    result.push(rest.slice(-3));
+    rest = rest.slice(0, -3);
+  }
+  return result.reverse().join(b);
+}
+
+const result9 = myFunction9("1234567", ".");
+console.log(result9);
+
+// 10 Write a function that takes a string as argument. As it is, the string has no meaning. Increment each letter to the next letter in the alphabet. Return the correct word
+
+function myFunction(str) {
+  return;
+}
+
+myFunction("bnchmf");
+
+("coding");
