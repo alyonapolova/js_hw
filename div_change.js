@@ -4,6 +4,7 @@ console.log(divEl);
 divEl.addEventListener("click", onChangeColor);
 function onChangeColor(e) {
   console.log(e.target);
+
   if (e.target.classList.contains("box1")) {
     e.target.style.backgroundColor = "black";
   }
