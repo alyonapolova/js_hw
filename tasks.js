@@ -141,8 +141,50 @@
 
 // Write a function that takes an object with two properties as argument
 // It should return the value of the property with key country
-function myFunction(obj) {
-  return obj["country"];
+// function myFunction(obj) {
+//   return obj["country"];
+// }
+// const result = myFunction({ continent: "Asia", country: "Japan" });
+// console.log(result);
+
+const name = "Andrew";
+
+const person = {
+  name: "Julia",
+  sayHi: function () {
+    return `Hello ${this.name}!`;
+  },
+};
+
+console.log(person.sayHi());
+
+function Cow(name) {
+  this.name = name;
+  this.speak = function () {
+    return "muuw";
+  };
 }
-const result = myFunction({ continent: "Asia", country: "Japan" });
-console.log(result);
+
+const cow = new Cow("Tora");
+console.log(cow);
+
+Cow.prototype.speak = function () {
+  return "woof";
+};
+
+console.log(cow.speak());
+
+function foo(x, y) {
+  arguments[1] = 20;
+  console.log(x, y);
+}
+foo(1, 3);
+
+const user = {
+  id: 1,
+  name: "Tom",
+  age: 27,
+  city: "New York",
+};
+
+const { name, ...data } = user;
