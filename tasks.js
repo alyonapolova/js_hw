@@ -147,44 +147,45 @@
 // const result = myFunction({ continent: "Asia", country: "Japan" });
 // console.log(result);
 
-const name = "Andrew";
+// const name = "Andrew";
 
-const person = {
-  name: "Julia",
-  sayHi: function () {
-    return `Hello ${this.name}!`;
-  },
-};
+// const person = {
+//   name: "Julia",
+//   sayHi: function () {
+//     return `Hello ${this.name}!`;
+//   },
+// };
 
-console.log(person.sayHi());
+// console.log(person.sayHi());
 
-function Cow(name) {
-  this.name = name;
-  this.speak = function () {
-    return "muuw";
-  };
-}
+// function Cow(name) {
+//   this.name = name;
+//   this.speak = function () {
+//     return "muuw";
+//   };
+// }
 
-const cow = new Cow("Tora");
-console.log(cow);
+// const cow = new Cow("Tora");
+// console.log(cow);
 
-Cow.prototype.speak = function () {
-  return "woof";
-};
+// Cow.prototype.speak = function () {
+//   return "woof";
+// };
 
-console.log(cow.speak());
+// console.log(cow.speak());
 
-function foo(x, y) {
-  arguments[1] = 20;
-  console.log(x, y);
-}
-foo(1, 3);
+// function foo(x, y) {
+//   arguments[1] = 20;
+//   console.log(x, y);
+// }
+// foo(1, 3);
 
-const user = {
-  id: 1,
-  name: "Tom",
-  age: 27,
-  city: "New York",
-};
+// const user = {
+//   id: 1,
+//   name: "Tom",
+//   age: 27,
+//   city: "New York",
+// };
 
-const { name, ...data } = user;
+// const { name, ...data } = user;
+// console.log(data);
