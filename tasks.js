@@ -151,12 +151,25 @@
 
 // const person = {
 //   name: "Julia",
-//   sayHi: function () {
+//   sayHi: () => {
 //     return `Hello ${this.name}!`;
 //   },
 // };
 
 // console.log(person.sayHi());
+
+const name = "Andrew";
+
+const person = {
+  name: "Julia",
+  sayHi: function () {
+    return `Hello ${this.name}!`;
+  },
+};
+console.log(person.sayHi());
+// const sayHi = person.sayHi.bind({ name: "Mark" });
+// console.log(person.sayHi());
+// console.log(sayHi());
 
 // function Cow(name) {
 //   this.name = name;
@@ -189,3 +202,6 @@
 
 // const { name, ...data } = user;
 // console.log(data);
+
+//  function const sayHi = () => console.log('Hello");
+// console.log(setTimeout(sayHi, 2000);)
